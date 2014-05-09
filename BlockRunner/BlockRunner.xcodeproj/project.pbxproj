@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD683815191D347800E91647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD683814191D347800E91647 /* Foundation.framework */; };
+		AD683817191D347800E91647 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD683816191D347800E91647 /* CoreGraphics.framework */; };
+		AD683819191D347800E91647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD683818191D347800E91647 /* UIKit.framework */; };
+		AD68381F191D347800E91647 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD68381D191D347800E91647 /* InfoPlist.strings */; };
+		AD683821191D347800E91647 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD683820191D347800E91647 /* main.m */; };
+		AD683825191D347800E91647 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD683824191D347800E91647 /* AppDelegate.m */; };
+		AD683828191D347800E91647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD683826191D347800E91647 /* Main.storyboard */; };
+		AD68382B191D347800E91647 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD68382A191D347800E91647 /* ViewController.m */; };
+		AD68382D191D347800E91647 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD68382C191D347800E91647 /* Images.xcassets */; };
+		AD683834191D347800E91647 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD683833191D347800E91647 /* XCTest.framework */; };
+		AD683835191D347800E91647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD683814191D347800E91647 /* Foundation.framework */; };
+		AD683836191D347800E91647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD683818191D347800E91647 /* UIKit.framework */; };
+		AD68383E191D347800E91647 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD68383C191D347800E91647 /* InfoPlist.strings */; };
+		AD683840191D347800E91647 /* BlockRunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD68383F191D347800E91647 /* BlockRunnerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD683837191D347800E91647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD683809191D347800E91647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD683810191D347800E91647;
+			remoteInfo = BlockRunner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD683811191D347800E91647 /* BlockRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD683814191D347800E91647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AD683816191D347800E91647 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AD683818191D347800E91647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AD68381C191D347800E91647 /* BlockRunner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlockRunner-Info.plist"; sourceTree = "<group>"; };
+		AD68381E191D347800E91647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD683820191D347800E91647 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD683822191D347800E91647 /* BlockRunner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlockRunner-Prefix.pch"; sourceTree = "<group>"; };
+		AD683823191D347800E91647 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD683824191D347800E91647 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD683827191D347800E91647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD683829191D347800E91647 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD68382A191D347800E91647 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD68382C191D347800E91647 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD683832191D347800E91647 /* BlockRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD683833191D347800E91647 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AD68383B191D347800E91647 /* BlockRunnerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlockRunnerTests-Info.plist"; sourceTree = "<group>"; };
+		AD68383D191D347800E91647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD68383F191D347800E91647 /* BlockRunnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockRunnerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD68380E191D347800E91647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD683817191D347800E91647 /* CoreGraphics.framework in Frameworks */,
+				AD683819191D347800E91647 /* UIKit.framework in Frameworks */,
+				AD683815191D347800E91647 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD68382F191D347800E91647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD683834191D347800E91647 /* XCTest.framework in Frameworks */,
+				AD683836191D347800E91647 /* UIKit.framework in Frameworks */,
+				AD683835191D347800E91647 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD683808191D347800E91647 = {
+			isa = PBXGroup;
+			children = (
+				AD68381A191D347800E91647 /* BlockRunner */,
+				AD683839191D347800E91647 /* BlockRunnerTests */,
+				AD683813191D347800E91647 /* Frameworks */,
+				AD683812191D347800E91647 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD683812191D347800E91647 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD683811191D347800E91647 /* BlockRunner.app */,
+				AD683832191D347800E91647 /* BlockRunnerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD683813191D347800E91647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD683814191D347800E91647 /* Foundation.framework */,
+				AD683816191D347800E91647 /* CoreGraphics.framework */,
+				AD683818191D347800E91647 /* UIKit.framework */,
+				AD683833191D347800E91647 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD68381A191D347800E91647 /* BlockRunner */ = {
+			isa = PBXGroup;
+			children = (
+				AD683823191D347800E91647 /* AppDelegate.h */,
+				AD683824191D347800E91647 /* AppDelegate.m */,
+				AD683826191D347800E91647 /* Main.storyboard */,
+				AD683829191D347800E91647 /* ViewController.h */,
+				AD68382A191D347800E91647 /* ViewController.m */,
+				AD68382C191D347800E91647 /* Images.xcassets */,
+				AD68381B191D347800E91647 /* Supporting Files */,
+			);
+			path = BlockRunner;
+			sourceTree = "<group>";
+		};
+		AD68381B191D347800E91647 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD68381C191D347800E91647 /* BlockRunner-Info.plist */,
+				AD68381D191D347800E91647 /* InfoPlist.strings */,
+				AD683820191D347800E91647 /* main.m */,
+				AD683822191D347800E91647 /* BlockRunner-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD683839191D347800E91647 /* BlockRunnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD68383F191D347800E91647 /* BlockRunnerTests.m */,
+				AD68383A191D347800E91647 /* Supporting Files */,
+			);
+			path = BlockRunnerTests;
+			sourceTree = "<group>";
+		};
+		AD68383A191D347800E91647 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD68383B191D347800E91647 /* BlockRunnerTests-Info.plist */,
+				AD68383C191D347800E91647 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD683810191D347800E91647 /* BlockRunner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD683843191D347800E91647 /* Build configuration list for PBXNativeTarget "BlockRunner" */;
+			buildPhases = (
+				AD68380D191D347800E91647 /* Sources */,
+				AD68380E191D347800E91647 /* Frameworks */,
+				AD68380F191D347800E91647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockRunner;
+			productName = BlockRunner;
+			productReference = AD683811191D347800E91647 /* BlockRunner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD683831191D347800E91647 /* BlockRunnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD683846191D347800E91647 /* Build configuration list for PBXNativeTarget "BlockRunnerTests" */;
+			buildPhases = (
+				AD68382E191D347800E91647 /* Sources */,
+				AD68382F191D347800E91647 /* Frameworks */,
+				AD683830191D347800E91647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD683838191D347800E91647 /* PBXTargetDependency */,
+			);
+			name = BlockRunnerTests;
+			productName = BlockRunnerTests;
+			productReference = AD683832191D347800E91647 /* BlockRunnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD683809191D347800E91647 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = vientapps;
+				TargetAttributes = {
+					AD683831191D347800E91647 = {
+						TestTargetID = AD683810191D347800E91647;
+					};
+				};
+			};
+			buildConfigurationList = AD68380C191D347800E91647 /* Build configuration list for PBXProject "BlockRunner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD683808191D347800E91647;
+			productRefGroup = AD683812191D347800E91647 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD683810191D347800E91647 /* BlockRunner */,
+				AD683831191D347800E91647 /* BlockRunnerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD68380F191D347800E91647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD68382D191D347800E91647 /* Images.xcassets in Resources */,
+				AD68381F191D347800E91647 /* InfoPlist.strings in Resources */,
+				AD683828191D347800E91647 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD683830191D347800E91647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD68383E191D347800E91647 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD68380D191D347800E91647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD68382B191D347800E91647 /* ViewController.m in Sources */,
+				AD683825191D347800E91647 /* AppDelegate.m in Sources */,
+				AD683821191D347800E91647 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD68382E191D347800E91647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD683840191D347800E91647 /* BlockRunnerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD683838191D347800E91647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD683810191D347800E91647 /* BlockRunner */;
+			targetProxy = AD683837191D347800E91647 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD68381D191D347800E91647 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD68381E191D347800E91647 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AD683826191D347800E91647 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD683827191D347800E91647 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD68383C191D347800E91647 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD68383D191D347800E91647 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD683841191D347800E91647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD683842191D347800E91647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD683844191D347800E91647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlockRunner/BlockRunner-Prefix.pch";
+				INFOPLIST_FILE = "BlockRunner/BlockRunner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AD683845191D347800E91647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlockRunner/BlockRunner-Prefix.pch";
+				INFOPLIST_FILE = "BlockRunner/BlockRunner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AD683847191D347800E91647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlockRunner.app/BlockRunner";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlockRunner/BlockRunner-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BlockRunnerTests/BlockRunnerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AD683848191D347800E91647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlockRunner.app/BlockRunner";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlockRunner/BlockRunner-Prefix.pch";
+				INFOPLIST_FILE = "BlockRunnerTests/BlockRunnerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD68380C191D347800E91647 /* Build configuration list for PBXProject "BlockRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD683841191D347800E91647 /* Debug */,
+				AD683842191D347800E91647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD683843191D347800E91647 /* Build configuration list for PBXNativeTarget "BlockRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD683844191D347800E91647 /* Debug */,
+				AD683845191D347800E91647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD683846191D347800E91647 /* Build configuration list for PBXNativeTarget "BlockRunnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD683847191D347800E91647 /* Debug */,
+				AD683848191D347800E91647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD683809191D347800E91647 /* Project object */;
+}
