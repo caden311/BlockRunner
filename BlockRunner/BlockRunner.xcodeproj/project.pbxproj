@@ -21,6 +21,8 @@
 		AD683836191D347800E91647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD683818191D347800E91647 /* UIKit.framework */; };
 		AD68383E191D347800E91647 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD68383C191D347800E91647 /* InfoPlist.strings */; };
 		AD683840191D347800E91647 /* BlockRunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD68383F191D347800E91647 /* BlockRunnerTests.m */; };
+		AD68384A191D38F800E91647 /* dangerBlock.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD683849191D38F800E91647 /* dangerBlock.jpeg */; };
+		AD68384C191D392100E91647 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = AD68384B191D392100E91647 /* ball.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		AD68383B191D347800E91647 /* BlockRunnerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlockRunnerTests-Info.plist"; sourceTree = "<group>"; };
 		AD68383D191D347800E91647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD68383F191D347800E91647 /* BlockRunnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockRunnerTests.m; sourceTree = "<group>"; };
+		AD683849191D38F800E91647 /* dangerBlock.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dangerBlock.jpeg; sourceTree = "<group>"; };
+		AD68384B191D392100E91647 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 		AD68381B191D347800E91647 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AD68384B191D392100E91647 /* ball.png */,
+				AD683849191D38F800E91647 /* dangerBlock.jpeg */,
 				AD68381C191D347800E91647 /* BlockRunner-Info.plist */,
 				AD68381D191D347800E91647 /* InfoPlist.strings */,
 				AD683820191D347800E91647 /* main.m */,
@@ -228,6 +234,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD68384A191D38F800E91647 /* dangerBlock.jpeg in Resources */,
+				AD68384C191D392100E91647 /* ball.png in Resources */,
 				AD68382D191D347800E91647 /* Images.xcassets in Resources */,
 				AD68381F191D347800E91647 /* InfoPlist.strings in Resources */,
 				AD683828191D347800E91647 /* Main.storyboard in Resources */,

@@ -9,5 +9,30 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    //button Variables
+    bool goRight;
+    bool goLeft;
+    bool leftPressed;
+    bool rightPressed;
+    
+    
+    
+    //timers
+    NSTimer * playerMovement;
+}
+
+
+
+
+//Buttons
+- (IBAction)touchUpLeft:(id)sender;
+- (IBAction)touchDownLeft:(id)sender;
+- (IBAction)touchUpRight:(id)sender;
+- (IBAction)touchDownRight:(id)sender;
+
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *Player;
 
 @end
