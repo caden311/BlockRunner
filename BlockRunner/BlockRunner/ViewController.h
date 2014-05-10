@@ -5,7 +5,7 @@
 //  Created by Brittny Wright on 5/9/14.
 //  Copyright (c) 2014 vientapps. All rights reserved.
 //
-
+#include "blockRow.h"
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController

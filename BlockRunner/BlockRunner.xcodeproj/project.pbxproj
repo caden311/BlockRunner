@@ -23,6 +23,7 @@
 		AD683840191D347800E91647 /* BlockRunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD68383F191D347800E91647 /* BlockRunnerTests.m */; };
 		AD68384A191D38F800E91647 /* dangerBlock.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD683849191D38F800E91647 /* dangerBlock.jpeg */; };
 		AD68384C191D392100E91647 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = AD68384B191D392100E91647 /* ball.png */; };
+		AD68384F191D70DA00E91647 /* blockRow.m in Sources */ = {isa = PBXBuildFile; fileRef = AD68384E191D70DA00E91647 /* blockRow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		AD68383F191D347800E91647 /* BlockRunnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockRunnerTests.m; sourceTree = "<group>"; };
 		AD683849191D38F800E91647 /* dangerBlock.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dangerBlock.jpeg; sourceTree = "<group>"; };
 		AD68384B191D392100E91647 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		AD68384D191D70DA00E91647 /* blockRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blockRow.h; sourceTree = "<group>"; };
+		AD68384E191D70DA00E91647 /* blockRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = blockRow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				AD683823191D347800E91647 /* AppDelegate.h */,
 				AD683824191D347800E91647 /* AppDelegate.m */,
 				AD683826191D347800E91647 /* Main.storyboard */,
+				AD68384D191D70DA00E91647 /* blockRow.h */,
+				AD68384E191D70DA00E91647 /* blockRow.m */,
 				AD683829191D347800E91647 /* ViewController.h */,
 				AD68382A191D347800E91647 /* ViewController.m */,
 				AD68382C191D347800E91647 /* Images.xcassets */,
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD68384F191D70DA00E91647 /* blockRow.m in Sources */,
 				AD68382B191D347800E91647 /* ViewController.m in Sources */,
 				AD683825191D347800E91647 /* AppDelegate.m in Sources */,
 				AD683821191D347800E91647 /* main.m in Sources */,
