@@ -25,13 +25,37 @@
     leftPressed=false;
     rightPressed=false;
     
+    rowArray=[[NSMutableArray alloc] init];
     
+    speedOfBlocks=2;
+    [self setUpRow];
+    
+   // NSTimer *timer=[NSTimer scheduledTimerWithTimeInterval:.09 target:self selector:@selector(movingBlocks) userInfo:nil repeats:YES];
+  
+    
+}
+
+-(void)setUpRow
+{
     blockRow * row1=[[blockRow alloc] init];
-    [row1 singleUpBlock:2];
-    UIImageView * temp=[row1 getBlockAtIndex:0];
-    [_myView addSubview:temp];
-    UIImageView * temp1=[[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    [_myView addSubview:temp1];
+    [row1 singleUpBlock:speedOfBlocks];
+    UIImageView * temp=[row1 getBlockAtIndex:[row1 getNumOfBlocks]-1];
+    [self.view addSubview:temp];
+    [self.view sendSubviewToBack:temp];
+    [rowArray addObject:temp];
+    
+
+}
+
+-(void)movingBlocks
+{
+    
+    for(int i=0; i<[rowArray count]; i++)
+    {
+        blockRow *temp=rowArray[i];
+        [temp updateRow];
+        
+    }
     
 }
 

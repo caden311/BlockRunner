@@ -31,12 +31,35 @@
 
 -(void)singleUpBlock: (int) newSpeed1
 {
-    [self setSpeed:&newSpeed1];
-    [self setDirection:YES];
-    UIImageView * block=[[UIImageView alloc] initWithFrame:CGRectMake(150, 150, 75, 200)];
-    block.image=[UIImage imageNamed:@"dangerBloc.jpeg"];
-    [self addBlockToArray:block];
-    
+    int rand=arc4random()%2;
+    int randHeight=50+(arc4random()%100);
+    if(rand<1)
+    {
+        [self setSpeed:&newSpeed1];
+        [self setDirection:YES];
+        UIImageView * block=[[UIImageView alloc] initWithFrame:CGRectMake((lengthOfViewController-widthOfBlock),randHeight,widthOfBlock,heightOfTallBlock)];
+        block.image=[UIImage imageNamed:@"dangerBlock.jpeg"];
+        [self addBlockToArray:block];
+    }
+    else
+    {
+        
+        [self setSpeed:&newSpeed1];
+        [self setDirection:YES];
+        UIImageView * block=[[UIImageView alloc] initWithFrame:CGRectMake((lengthOfViewController-widthOfBlock),randHeight,widthOfBlock,heightOfSmallBlock)];
+        block.image=[UIImage imageNamed:@"dangerBlock.jpeg"];
+        [self addBlockToArray:block];
+        
+        
+    }
+}
+-(void)updateRow
+{
+    for(int i=0; i<[Blocks count]; i++)
+    {
+        UIImageView *temp=Blocks[i];
+        temp.center=CGPointMake(temp.center.x-speed, temp.center.y);
+    }
 }
 
 -(NSInteger)getNumOfBlocks
@@ -65,6 +88,11 @@
         numOfBlocks=0;
         speed=2;
         goingUp=YES;
+        lengthOfViewController=568;
+        widthOfViewController=320;
+        widthOfBlock=84;
+        heightOfSmallBlock=84;
+        heightOfTallBlock=180;
         
     }
     return self;

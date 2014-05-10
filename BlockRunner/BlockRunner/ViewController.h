@@ -17,6 +17,12 @@
     bool rightPressed;
     
     
+    //speed
+    int speedOfBlocks;
+    
+    
+    //arrayOfRows
+    NSMutableArray * rowArray;
     
     //timers
     NSTimer * playerMovement;

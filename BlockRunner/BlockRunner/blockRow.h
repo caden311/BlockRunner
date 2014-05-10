@@ -17,8 +17,17 @@
     bool goingUp;
     
     
+    //viewcontroller
+    int lengthOfViewController;
+    int widthOfViewController;
+    int widthOfBlock;
+    int heightOfSmallBlock;
+    int heightOfTallBlock;
+    
 }
 
+
+-(void)updateRow;
 -(UIImageView*)getBlockAtIndex:(int)index;
 -(NSInteger)getNumOfBlocks;
 -(NSInteger)getSpeed;
