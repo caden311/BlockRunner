@@ -13,11 +13,12 @@
 
 
 
--(void)addBlockToArray:(UIImage*) newBlock
+-(void)addBlockToArray:(UIImageView*) newBlock
 {
     [Blocks insertObject:newBlock atIndex:numOfBlocks];
     numOfBlocks+=1;
 }
+
 
 -(void)setSpeed:(NSInteger*) newSpeed
 {
@@ -28,11 +29,14 @@
     goingUp=val;
 }
 
--(void)setUpRow1: (int) numBlocks: (int) newSpeed1: (bool *) direction
+-(void)singleUpBlock: (int) newSpeed1
 {
-    numOfBlocks=numBlocks;
     [self setSpeed:&newSpeed1];
-    [self setDirection:direction];
+    [self setDirection:YES];
+    UIImageView * block=[[UIImageView alloc] initWithFrame:CGRectMake(150, 150, 75, 200)];
+    block.image=[UIImage imageNamed:@"dangerBloc.jpeg"];
+    [self addBlockToArray:block];
+    
 }
 
 -(NSInteger)getNumOfBlocks
@@ -48,6 +52,10 @@
     return goingUp;
 }
 
+-(UIImageView*)getBlockAtIndex:(int)index
+{
+    return Blocks[index];
+}
 
 - (instancetype)init
 {

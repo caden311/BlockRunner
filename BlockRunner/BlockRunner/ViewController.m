@@ -26,15 +26,12 @@
     rightPressed=false;
     
     
-  //   CGRect rect1=CGRectMake(100, 100, 100, 100);
-  //  UIImageView *block1=[[UIImageView alloc]initWithFrame:rect1];
-   
-   // block1=[UIImage imageNamed:@"dangerBlock"];
-  
-   // blockRow * Row1=[[blockRow alloc] init];
-   // [Row1 setUpRow1:1 :3 :YES];
-   // [Row1 addBlockToArray:block1];
-    
+    blockRow * row1=[[blockRow alloc] init];
+    [row1 singleUpBlock:2];
+    UIImageView * temp=[row1 getBlockAtIndex:0];
+    [_myView addSubview:temp];
+    UIImageView * temp1=[[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [_myView addSubview:temp1];
     
 }
 

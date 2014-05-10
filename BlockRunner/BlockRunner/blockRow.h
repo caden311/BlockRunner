@@ -19,13 +19,14 @@
     
 }
 
+-(UIImageView*)getBlockAtIndex:(int)index;
 -(NSInteger)getNumOfBlocks;
 -(NSInteger)getSpeed;
 -(bool)getDirection;
 -(void)setSpeed:(NSInteger*)newSpeed;
 -(void)setDirection:(bool)Dir;
--(void)setUpRow1: (int) numBlocks: (int) newSpeed1: (bool *) direction;
--(void)addBlockToArray:(UIImage*)newImage;
+-(void)singleUpBlock:(int) newSpeed1;
+-(void)addBlockToArray:(UIImageView*)newImage;
 
 
 
