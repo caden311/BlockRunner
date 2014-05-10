@@ -11,7 +11,8 @@
 @interface blockRow : NSObject
 {
     int numOfBlocks;
-    int speed;
+    float xSpeed;
+    float ySpeed;
     NSMutableArray *Blocks;
     //direction
     bool goingUp;
@@ -27,14 +28,17 @@
 }
 
 
+-(int)getXLocation;
 -(void)updateRow;
 -(UIImageView*)getBlockAtIndex:(int)index;
 -(NSInteger)getNumOfBlocks;
--(NSInteger)getSpeed;
+-(NSInteger)getXSpeed;
+-(NSInteger)getYSpeed;
 -(bool)getDirection;
--(void)setSpeed:(NSInteger*)newSpeed;
+-(void)setXSpeed:(NSInteger*)newSpeed;
+-(void)setYSpeed:(NSInteger*)newSpeed;
 -(void)setDirection:(bool)Dir;
--(void)singleUpBlock:(int) newSpeed1;
+-(void)singleUpBlock;
 -(void)addBlockToArray:(UIImageView*)newImage;
 
 

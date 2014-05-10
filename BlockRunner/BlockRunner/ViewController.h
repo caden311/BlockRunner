@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 {
+    //mapping variables
+    int lengthOfViewController;
+    int widthOfViewController;
+    int widthOfBlock;
+    int heightOfSmallBlock;
+    int heightOfTallBlock;
     //button Variables
     bool goRight;
     bool goLeft;

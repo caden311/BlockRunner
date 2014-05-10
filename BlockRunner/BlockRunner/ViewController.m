@@ -18,6 +18,11 @@
 {
     
     [super viewDidLoad];
+    lengthOfViewController=568;
+    widthOfViewController=320;
+    widthOfBlock=84;
+    heightOfSmallBlock=84;
+    heightOfTallBlock=180;
 	// Do any additional setup after loading the view, typically from a nib.
     //button variables
     goRight=false;
@@ -25,25 +30,27 @@
     leftPressed=false;
     rightPressed=false;
     
+    
     rowArray=[[NSMutableArray alloc] init];
+   
     
     speedOfBlocks=2;
-    [self setUpRow];
+    [self setUpSingleBlockRow];
     
-   // NSTimer *timer=[NSTimer scheduledTimerWithTimeInterval:.09 target:self selector:@selector(movingBlocks) userInfo:nil repeats:YES];
+    NSTimer *timer=[NSTimer scheduledTimerWithTimeInterval:.05 target:self selector:@selector(movingBlocks) userInfo:nil repeats:YES];
   
     
 }
 
--(void)setUpRow
+-(void)setUpSingleBlockRow
 {
     blockRow * row1=[[blockRow alloc] init];
-    [row1 singleUpBlock:speedOfBlocks];
+    [row1 singleUpBlock];
     UIImageView * temp=[row1 getBlockAtIndex:[row1 getNumOfBlocks]-1];
     [self.view addSubview:temp];
     [self.view sendSubviewToBack:temp];
-    [rowArray addObject:temp];
-    
+    [rowArray addObject:row1];
+  
 
 }
 
@@ -55,6 +62,16 @@
         blockRow *temp=rowArray[i];
         [temp updateRow];
         
+        
+        if(i==[rowArray count]-1)
+        {
+            int xLoc=[temp getXLocation];
+           // NSLog([NSString stringWithFormat:@"%i",xLoc]);
+            if(xLoc<(lengthOfViewController-(widthOfBlock*2)))
+            {
+                [self setUpSingleBlockRow];
+            }
+        }
     }
     
 }
