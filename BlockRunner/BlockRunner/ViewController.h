@@ -5,11 +5,17 @@
 //  Created by Brittny Wright on 5/9/14.
 //  Copyright (c) 2014 vientapps. All rights reserved.
 //
-#include "blockRow.h"
+
+#include "Block.h"
+#include "dataBase.h"
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
 {
+    
+    //score variables
+    int score;
+    
     //mapping variables
     int lengthOfViewController;
     int widthOfViewController;
@@ -25,14 +31,21 @@
     
     //speed
     int speedOfBlocks;
-    
-    
+    //collisions
+    NSMutableArray *collisionOppositeBlocksArray;
+    NSMutableArray *collisionObjectsArray;
+    NSMutableArray *rowSpeedArray;
     //arrayOfRows
     NSMutableArray * rowArray;
     
     //timers
     NSTimer * playerMovement;
+    NSTimer *gameTimer;
 }
+@property (strong, nonatomic) dataBase * db;
+
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *highScoreLabel;
 
 
 
@@ -44,8 +57,10 @@
 - (IBAction)touchUpRight:(id)sender;
 - (IBAction)touchDownRight:(id)sender;
 
-
+@property (weak, nonatomic) IBOutlet UIButton *goButton;
+- (IBAction)goButtonPressed:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIImageView *Player;
+
 
 @end
